@@ -15,7 +15,7 @@ export default {
           },
           body: JSON.stringify({
             chat_id: chatId,
-            text: "Kamu kirim: " + text
+            text: "Mirror# " + text
           })
         });
       }
