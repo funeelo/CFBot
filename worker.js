@@ -8,7 +8,8 @@ export default {
       const text = update.message?.text;
 
       if (text === "/start") {
-        const res = await fetch(`https://api.telegram.org/bot${env.BOT_TOKEN}/sendMessage`, {
+        const res = await
+console.log("TOKEN VALUE:", env.BOT_TOKEN); fetch(`https://api.telegram.org/bot${env.BOT_TOKEN}/sendMessage`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
